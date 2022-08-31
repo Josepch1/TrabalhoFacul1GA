@@ -10,6 +10,12 @@ a:visited, a:hover, a:active {
     text-align: right;
 }
 
+.aboutMe a {
+    display: flex;
+    flex-direction: column;
+    color: black !important;
+}
+
 .title {
     font-size: 70px;
 }
@@ -46,11 +52,27 @@ a:visited, a:hover, a:active {
     overflow: auto;
 }
 
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: yellow; 
+}
+   
+
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #B85B14;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
@@ -75,17 +97,70 @@ a:visited, a:hover, a:active {
     transform: translate(-50%, -50%);
     display: none;
 }
+.modalLista {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modalTermo {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modalCharada {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modalUpgolden {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .modalCalculadora {
         width: 350px;
         height: 350px;
-        background-color: rebeccapurple;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
+    }
+    .modalLista {
+        width: 350px;
+        height: 350px;
+    }
+    .modalTermo {
+        width: 350px;
+        height: 350px;
+    }
+    .modalCharada {
+        width: 350px;
+        height: 350px;
+    }
+    .modalUpgolden {
+        width: 350px;
+        height: 350px;
     }
 }
 
