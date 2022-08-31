@@ -76,6 +76,19 @@ a:visited, a:hover, a:active {
     display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .modalCalculadora {
+        width: 350px;
+        height: 350px;
+        background-color: rebeccapurple;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
 .closeButton img {
     width: 30px;
     height: 30px;
