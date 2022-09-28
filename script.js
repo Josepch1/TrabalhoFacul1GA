@@ -1,23 +1,3 @@
-function acaoCalculadora() {
-  let modal = document.querySelector(".modalCalculadora");
-  modal.style.display = "block";
-}
-
-function fecharCalculadora() {
-  let modal = document.querySelector(".modalCalculadora");
-  modal.style.display = "none";
-}
-
-function acaoLista() {
-  let modal = document.querySelector(".modalLista");
-  modal.style.display = "block";
-}
-
-function fecharLista() {
-  let modal = document.querySelector(".modalLista");
-  modal.style.display = "none";
-}
-
 function acaoTermo() {
   let modal = document.querySelector(".modalTermo");
   modal.style.display = "block";

@@ -1,8 +1,10 @@
-a{
+a {
     text-decoration: none !important;
 }
 
-a:visited, a:hover, a:active {
+a:visited,
+a:hover,
+a:active {
     color: currentColor !important;
 }
 
@@ -23,6 +25,16 @@ a:visited, a:hover, a:active {
 .flexContainer {
     display: flex;
     justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+}
+
+.aboutMe p {
+    margin: 3px;
+}
+
+.header-container h1 {
+    margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -35,7 +47,7 @@ a:visited, a:hover, a:active {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .title {
         font-size: 36px;
     }
@@ -43,12 +55,12 @@ a:visited, a:hover, a:active {
 
 .containerScroll {
     margin: 5px;
-    width: 800px;
+    width: 600px;
     height: 200px;
     border: 1px solid #000000;
     white-space: nowrap;
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     overflow: auto;
 }
 
@@ -57,14 +69,13 @@ a:visited, a:hover, a:active {
 }
 
 ::-webkit-scrollbar-track {
-    background: #ffffff; 
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    background: yellow; 
+    background: yellow;
 }
-   
 
 .item {
     display: flex;
@@ -82,7 +93,7 @@ a:visited, a:hover, a:active {
     cursor: pointer;
 }
 
-.divCentro{
+.divCentro {
     display: flex;
     justify-content: center;
 }
@@ -97,6 +108,7 @@ a:visited, a:hover, a:active {
     transform: translate(-50%, -50%);
     display: none;
 }
+
 .modalLista {
     width: 500px;
     height: 500px;
@@ -142,14 +154,6 @@ a:visited, a:hover, a:active {
 }
 
 @media screen and (max-width: 768px) {
-    .modalCalculadora {
-        width: 350px;
-        height: 350px;
-    }
-    .modalLista {
-        width: 350px;
-        height: 350px;
-    }
     .modalTermo {
         width: 350px;
         height: 350px;
@@ -162,6 +166,20 @@ a:visited, a:hover, a:active {
         width: 350px;
         height: 350px;
     }
+    .modalUpgolden .modal-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .modalCharada .modal-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .modalTermo .modal-img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .closeButton img {
@@ -170,4 +188,30 @@ a:visited, a:hover, a:active {
     margin: 5px;
     cursor: pointer;
     float: right;
+}
+
+.social svg {
+    width: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
